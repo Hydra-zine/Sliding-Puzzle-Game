@@ -54,12 +54,9 @@ function checkWin() {
 		}
 	}
 	clearInterval(timerInterval);
-	document.getElementById("win-message").style.display = "block";
-	setTimeout(function() {
-		if (confirm("You solved it in " + moves + " moves and " + seconds + "s!\nPlay again?")) {
-			newGame();
-		}
-	}, 100);
+
+	document.getElementById("win-message").textContent = "You solved it in " + moves + " moves and " + seconds + "s!";
+	//document.getElementById("win-message").style.display = "block";
 }
 
 function resetStats() {
