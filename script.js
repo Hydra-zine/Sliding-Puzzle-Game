@@ -56,7 +56,7 @@ function checkWin() {
 	clearInterval(timerInterval);
 
 	document.getElementById("win-message").textContent = "You solved it in " + moves + " moves and " + seconds + "s!";
-	//document.getElementById("win-message").style.display = "block";
+	document.getElementById("win-message").style.display = "block";
 }
 
 function resetStats() {
@@ -81,6 +81,12 @@ function newGame() {
 	resetStats();
 	shuffle();
 }
+
+// // DEBUG WIN FUNCTION
+// function debugWin() {
+// 	buildBoard();
+// 	checkWin();
+// }
 
 function clickTile(row, col) {
 	var tile = document.getElementById("cell" + row + col).className;
