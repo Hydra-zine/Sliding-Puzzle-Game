@@ -82,11 +82,11 @@ function newGame() {
 	shuffle();
 }
 
-// // DEBUG WIN FUNCTION
-// function debugWin() {
-// 	buildBoard();
-// 	checkWin();
-// }
+function testWin() {
+	buildBoard();
+	resetStats();
+	swapTiles("cell43", "cell44");
+}
 
 function clickTile(row, col) {
 	var tile = document.getElementById("cell" + row + col).className;
