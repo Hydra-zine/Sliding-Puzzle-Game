@@ -1,0 +1,121 @@
+BODY {
+	background: #1a1a2e;
+	font-family: Arial, sans-serif;
+	color: #e0e0e0;
+}
+
+h1 {
+	font-size: 2rem;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #e0e0e0;
+	margin-bottom: 8px;
+}
+
+#subtitle {
+	font-size: 0.85rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #7a7a9a;
+	margin-bottom: 28px;
+}
+
+#table {
+	display: table;
+	border: 3px solid #e0e0e0;
+	box-shadow: 0 0 32px rgba(255,255,255,0.08);
+}
+
+.tile1,  .tile2,  .tile3,  .tile4,
+.tile5,  .tile6,  .tile7,  .tile8,
+.tile9,  .tile10, .tile11, .tile12,
+.tile13, .tile14, .tile15, .tile16 {
+	display: table-cell;
+	width: 90px;
+	height: 90px;
+	border: 2px solid #1a1a2e;
+	background: url("https://i.imgur.com/CmFuOpx.png");
+	background-size: 360px 360px;
+	cursor: pointer;
+	transition: filter 0.1s;
+	filter: brightness(0.92);
+}
+
+.tile1:hover,  .tile2:hover,  .tile3:hover,  .tile4:hover,
+.tile5:hover,  .tile6:hover,  .tile7:hover,  .tile8:hover,
+.tile9:hover,  .tile10:hover, .tile11:hover, .tile12:hover,
+.tile13:hover, .tile14:hover, .tile15:hover {
+	filter: brightness(1.08);
+}
+
+
+.tile1  {background-position:    0px    0px;}
+.tile2  {background-position:  -90px    0px;}
+.tile3  {background-position: -180px    0px;}
+.tile4  {background-position: -270px    0px;}
+.tile5  {background-position:    0px  -90px;}
+.tile6  {background-position:  -90px  -90px;}
+.tile7  {background-position: -180px  -90px;}
+.tile8  {background-position: -270px  -90px;}
+.tile9  {background-position:    0px -180px;}
+.tile10 {background-position:  -90px -180px;}
+.tile11 {background-position: -180px -180px;}
+.tile12 {background-position: -270px -180px;}
+.tile13 {background-position:    0px -270px;}
+.tile14 {background-position:  -90px -270px;}
+.tile15 {background-position: -180px -270px;}
+.tile16 {background: #1a1a2e; cursor: default;}
+
+#stats {
+	margin: 22px 0 16px 0;
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+}
+
+.stat-label {
+	font-size: 0.7rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #7a7a9a;
+	margin-bottom: 4px;
+}
+
+.stat-value {
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #e0e0e0;
+}
+
+#buttons {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+}
+
+button {
+	background: transparent;
+	color: #e0e0e0;
+	border: 2px solid #e0e0e0;
+	padding: 10px 24px;
+	font-size: 0.75rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background 0.15s, color 0.15s;
+}
+
+button:hover {
+	background: #e0e0e0;
+	color: #1a1a2e;
+}
+
+#win-message {
+	display: none;
+	margin-top: 24px;
+	font-size: 1rem;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #a0e0a0;
+}

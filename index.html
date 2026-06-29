@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sliding Picture Puzzle</title>
+		<link rel="stylesheet" href="./style.css">
+	</head>
+
+	<body>
+		<center>
+			<h1>Puzzle</h1>
+			<div id="subtitle">Sliding Tile Game</div>
+
+			<div id="table" style="display: table;"></div>
+
+			<div id="stats">
+				<div>
+					<div class="stat-label">Moves</div>
+					<div class="stat-value" id="moves">0</div>
+				</div>
+				<div>
+					<div class="stat-label">Time</div>
+					<div class="stat-value" id="timer">0s</div>
+				</div>
+			</div>
+
+			<div id="win-message">Puzzle Solved!</div>
+
+			<div id="buttons">
+				<button onClick="newGame();">New Game</button>
+			</div>
+		</center>
+		<script src="./script.js"></script>
+	</body>
+</html>
